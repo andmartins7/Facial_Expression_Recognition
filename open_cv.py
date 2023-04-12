@@ -4,7 +4,7 @@ from keras.models import load_model
 import urllib.request
 
 # url = 'https://raw.githubusercontent.com/opencv/opencv/master/data/haarcascades/haarcascade_frontalface_default.xml'
-file_path = 'C:/Users/andre.martins.SP-COPASTUR/Documents/Python Scripts/Facial_Expression_Recognition/model/haarcascade_frontalface_default.xml'
+file_path = '/path/to/Facial_Expression_Recognition/model/haarcascade_frontalface_default.xml'
 
 # urllib.request.urlretrieve(url, file_path)
 
@@ -14,7 +14,7 @@ face_cascade = cv2.CascadeClassifier(file_path) # Carrega o modelo de detecção
 emotion_dict = {0: 'Angry', 1: 'Disgusted', 2: 'Fearful', 3: 'Happy', 4: 'Neutral', 5: 'Sad', 6: 'Surprised'} # Dicionário com as emoções correspondentes aos índices
 
 # url_emotion = 'https://github.com/oarriaga/face_classification/raw/master/trained_models/emotion_models/fer2013_mini_XCEPTION.102-0.66.hdf5'
-file_path_emotion = 'C:/Users/andre.martins.SP-COPASTUR/Documents/Python Scripts/Facial_Expression_Recognition/model/emotion_detection_model.h5'
+file_path_emotion = '/path/to/Facial_Expression_Recognition/model/emotion_detection_model.h5'
 
 # urllib.request.urlretrieve(url_emotion, file_path_emotion)
 
